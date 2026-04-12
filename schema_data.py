@@ -130,9 +130,12 @@ def seed_database(conn):
     # TODO: replace placeholder data with your team's chosen artists
 
     artists = [
-        # (artist_id, name, genre, origin_city),
-        (1, "TODO — Artist Name", "TODO — Genre", "TODO — City"),
-        # add at least 5 more rows ...
+        (1, "Drake", "Rap", "Toronto"),
+    (2, "Kendrick Lamar", "Rap", "Compton"),
+    (3, "J. Cole", "Rap", "Fayetteville"),
+    (4, "Travis Scott", "Rap", "Houston"),
+    (5, "Future", "Rap", "Atlanta"),
+    (6, "Lil Baby", "Rap", "Atlanta")
     ]
 
     conn.executemany(
@@ -147,9 +150,24 @@ def seed_database(conn):
     # TODO: replace placeholder data with your team's chosen tracks (minimum 18)
 
     tracks = [
-        # (track_id, title, duration_seconds, artist_id),
-        (1, "TODO — Track Title", 200, 1),
-        # add at least 17 more rows ...
+        (1, "God's Plan", 198, 1),
+(2, "Hotline Bling", 267, 1),
+(3, "HUMBLE.", 177, 2),
+(4, "DNA.", 185, 2),
+(5, "Alright", 215, 2),
+(6, "No Role Modelz", 292, 3),
+(7, "Middle Child", 214, 3),
+(8, "SICKO MODE", 312, 4),
+(9, "Goosebumps", 244, 4),
+(10, "Antidote", 262, 4),
+(11, "Mask Off", 204, 5),
+(12, "Life Is Good", 237, 5),
+(13, "Drip Too Hard", 145, 6),
+(14, "The Bigger Picture", 240, 6),
+(15, "Laugh Now Cry Later", 261, 1),
+(16, "King Kunta", 234, 2),
+(17, "Love Yourz", 235, 3),
+(18, "Highest in the Room", 175, 4)
     ]
 
     conn.executemany(
@@ -162,9 +180,10 @@ def seed_database(conn):
     # TODO: replace placeholder data with your team's chosen playlists (minimum 4)
 
     playlists = [
-        # (playlist_id, playlist_name, owner_name),
-        (1, "TODO — Playlist Name", "TODO — Owner"),
-        # add at least 3 more rows ...
+        (1, "Rap Essentials", "Justin"),
+    (2, "Workout Rap", "Miguel"),
+    (3, "Late Night Vibes", "Jordan"),
+    (4, "Atlanta Trap", "Chris")
     ]
 
     conn.executemany(
@@ -181,9 +200,29 @@ def seed_database(conn):
     # TODO: replace placeholder data with your team's chosen assignments (minimum 20)
 
     playlist_tracks = [
-        # (playlist_id, track_id, position),
         (1, 1, 1),
-        # add at least 19 more rows ...
+        (1, 2, 2),
+        (1, 3, 3),
+        (1, 4, 4),
+        (1, 5, 5),
+
+        (2, 6, 1),
+        (2, 7, 2),
+        (2, 8, 3),
+        (2, 9, 4),
+        (2, 10, 5),
+
+        (3, 11, 1),
+        (3, 12, 2),
+        (3, 13, 3),
+        (3, 14, 4),
+        (3, 15, 5),
+
+        (4, 16, 1),
+        (4, 17, 2),
+        (4, 18, 3),
+        (4, 3, 4),
+        (4, 8, 5)
     ]
 
     conn.executemany(
