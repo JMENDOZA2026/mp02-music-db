@@ -33,11 +33,13 @@ import os
 # TODO: uncomment and complete these import lines once Author 1 and Author 2
 #       have merged their modules into main.
 
-# from schema_data import build_database, seed_database
-# from queries    import (get_playlist_tracks,
-#                         get_tracks_on_no_playlist,
-#                         get_most_added_track,
-#                         get_playlist_durations)
+from schema_data import build_database, seed_database
+from queries import (
+    get_playlist_tracks,
+    get_tracks_on_no_playlist,
+    get_most_added_track,
+    get_playlist_durations
+)
 
 
 # ─────────────────────────────────────────────────────────────────────────────
